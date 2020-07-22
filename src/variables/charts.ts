@@ -1,6 +1,4 @@
-// ##############################
-// // // javascript library for creating charts
-// #############################
+
 const Chartist = require('chartist');
 
 // ##############################
@@ -11,21 +9,22 @@ var delays = 80,
 var delays2 = 80,
   durations2 = 500;
 
-// ##############################
-// // // Daily Sales
-// #############################
-
+  function Ale(min: any, max: any) {
+    var num = Math.random() * (max - min);
+    return num + min;
+  }
+  
 export const dailySalesChart = {
   data: {
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-    series: [[12, 17, 7, 17, 23, 18, 38]]
+    series: [[Ale(1,40), Ale(1,40), Ale(1,40), Ale(1,40), Ale(1,40), Ale(1,40), Ale(1,40)]]
   },
   options: {
     lineSmooth: Chartist.Interpolation.cardinal({
       tension: 0
     }),
     low: 0,
-    high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+    high: 50,
     chartPadding: {
       top: 0,
       right: 0,
@@ -65,9 +64,7 @@ export const dailySalesChart = {
   }
 };
 
-// ##############################
-// // // Email Subscriptions
-// #############################
+
 
 export const emailsSubscriptionChart = {
   data: {
@@ -85,7 +82,7 @@ export const emailsSubscriptionChart = {
       'Nov',
       'Dec'
     ],
-    series: [[542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]]
+    series: [[Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800), Ale(300,800)]]
   },
   options: {
     axisX: {
@@ -130,9 +127,7 @@ export const emailsSubscriptionChart = {
   }
 };
 
-// ##############################
-// // // Completed Tasks
-// #############################
+
 
 export const completedTasksChart = {
   data: {
@@ -144,7 +139,7 @@ export const completedTasksChart = {
       tension: 0
     }),
     low: 0,
-    high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+    high: 1000,
     chartPadding: {
       top: 0,
       right: 0,
@@ -183,8 +178,3 @@ export const completedTasksChart = {
   }
 };
 
-// module.exports = {
-//   dailySalesChart,
-//   emailsSubscriptionChart,
-//   completedTasksChart
-// };

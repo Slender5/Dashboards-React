@@ -117,7 +117,7 @@ class Dashboard extends React.Component<Props, State> {
       <div className={classes.wrapper}>
         <Sidebar
           routes={routes}
-          logoText={'Creative Tim'}
+          logoText={'Dashboards'}
           logo={logo}
           image={this.state.image}
           handleDrawerToggle={this.handleDrawerToggle}
@@ -140,14 +140,6 @@ class Dashboard extends React.Component<Props, State> {
             <div className={classes.map}>{switchRoutes}</div>
           )}
           {this.getRoute() ? <Footer /> : null}
-          <FixedPlugin
-            handleImageClick={this.handleImageClick}
-            handleColorClick={this.handleColorClick}
-            bgColor={this.state.color}
-            bgImage={this.state.image}
-            handleFixedClick={this.handleFixedClick}
-            fixedClasses={this.state.fixedClasses}
-          />
         </div>
       </div>
     );

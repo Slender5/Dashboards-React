@@ -13,7 +13,7 @@ import CardAvatar from '../../components/Card/CardAvatar';
 import CardBody from '../../components/Card/CardBody';
 import CardFooter from '../../components/Card/CardFooter';
 
-import avatar from 'assets/img/faces/marc.jpg';
+import avatar from 'assets/img/faces/jm.png';
 import { createStyles } from '@material-ui/core';
 
 const styles = createStyles({
@@ -146,7 +146,7 @@ function UserProfile(props: any) {
               </GridContainer>
             </CardBody>
             <CardFooter>
-              <Button color="primary">Update Profile</Button>
+              <Button color="primary" type="submit">Update Profile</Button>
             </CardFooter>
           </Card>
         </GridItem>
@@ -158,16 +158,11 @@ function UserProfile(props: any) {
               </a>
             </CardAvatar>
             <CardBody profile={true}>
-              <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
+              <h6 className={classes.cardCategory}>Programador</h6>
+              <h4 className={classes.cardTitle}>Jafet Morales</h4>
               <p className={classes.description}>
-                Don't be scared of the truth because we need to restart the
-                human foundation in truth And I love you like Kanye loves Kanye
-                I love Rick Owens’ bed design but the back is...
+               Aprendiendo a usar React TypeScript
               </p>
-              <Button color="primary" round={true}>
-                Follow
-              </Button>
             </CardBody>
           </Card>
         </GridItem>
