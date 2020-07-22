@@ -1,9 +1,7 @@
 import React from 'react';
-// nodejs library that concatenates classes
+
 import classNames from 'classnames';
-// nodejs library to set properties for components
-// import PropTypes from "prop-types";
-// @material-ui/core components
+
 import withStyles from '@material-ui/core/styles/withStyles';
 // @material-ui/icons
 // core components
@@ -25,11 +23,5 @@ function CardAvatar({ ...props }: any) {
   );
 }
 
-// CardAvatar.propTypes = {
-//   children: PropTypes.node.isRequired,
-//   className: PropTypes.string,
-//   profile: PropTypes.bool,
-//   plain: PropTypes.bool
-// };
 
 export default withStyles(cardAvatarStyle)(CardAvatar);

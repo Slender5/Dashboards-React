@@ -32,7 +32,7 @@ import CardFooter from '../../components/Card/CardFooter';
 
 import {
   dailySalesChart,
-  emailsSubscriptionChart,
+  salesmonth,
   completedTasksChart
 } from '../../variables/charts';
 
@@ -84,7 +84,7 @@ class Dashboard extends React.Component<Props, State> {
                   <Danger>
                     <Warning />
                   </Danger>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
+                  <a href="#" onClick={e => e.preventDefault()}>
                     Conseguir mas
                   </a>
                 </div>
@@ -176,9 +176,9 @@ class Dashboard extends React.Component<Props, State> {
               <CardHeader color="warning">
                 <ChartistGraph
                   className="ct-chart"
-                  data={emailsSubscriptionChart.data}
+                  data={salesmonth.data}
                   type="Bar"
-                  options={emailsSubscriptionChart.options}
+                  options={salesmonth.options}
                   // responsiveOptions={emailsSubscriptionChart.responsiveOptions}
                   // listener={emailsSubscriptionChart.animation}
                 />

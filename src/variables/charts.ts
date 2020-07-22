@@ -66,7 +66,7 @@ export const dailySalesChart = {
 
 
 
-export const emailsSubscriptionChart = {
+export const salesmonth = {
   data: {
     labels: [
       'Jan',

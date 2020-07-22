@@ -1,13 +1,9 @@
 import React from 'react';
-// nodejs library that concatenates classes
-import classNames from 'classnames';
-// nodejs library to set properties for components
-// import PropTypes from "prop-types";
-// @material-ui/core components
-import withStyles from '@material-ui/core/styles/withStyles';
-// @material-ui/icons
 
-// core components
+import classNames from 'classnames';
+
+import withStyles from '@material-ui/core/styles/withStyles';
+
 import cardBodyStyle from '../../assets/jss/material-dashboard-react/components/cardBodyStyle';
 
 function CardBody({ ...props }: any) {
@@ -24,12 +20,5 @@ function CardBody({ ...props }: any) {
     </div>
   );
 }
-
-// CardBody.propTypes = {
-//   classes: PropTypes.object.isRequired,
-//   className: PropTypes.string,
-//   plain: PropTypes.bool,
-//   profile: PropTypes.bool
-// };
 
 export default withStyles(cardBodyStyle)(CardBody);

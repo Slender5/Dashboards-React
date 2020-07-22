@@ -1,8 +1,7 @@
 import React from 'react';
 // nodejs library that concatenates classes
 import classNames from 'classnames';
-// nodejs library to set properties for components
-// @material-ui/core components
+
 import withStyles from '@material-ui/core/styles/withStyles';
 // @material-ui/icons
 
@@ -23,17 +22,6 @@ function CardIcon({ ...props }: any) {
   );
 }
 
-// CardIcon.propTypes = {
-//   classes: PropTypes.object.isRequired,
-//   className: PropTypes.string,
-//   color: PropTypes.oneOf([
-//     "warning",
-//     "success",
-//     "danger",
-//     "info",
-//     "primary",
-//     "rose"
-//   ])
-// };
+
 
 export default withStyles(cardIconStyle)(CardIcon);
