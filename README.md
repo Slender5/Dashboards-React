@@ -22,3 +22,6 @@ Segundo Metodo:
 1. Usar en el cmd "npm update" (sin comillas)
 2. npm start
 3. Utilizar el comando para instalar la dependencia necesaria, este comando se mostrara en el navegador
+
+Repsitorios usados:
+https://github.com/ramyx/material-dashboard-reactts
