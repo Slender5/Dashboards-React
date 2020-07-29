@@ -1,7 +1,10 @@
 # Dashboards
  Proyecto Dashboars con react & Typescript
+ 
+El tiempo con el que se trabajo este proyecto fue de semana y media, de la cual use la mayoría del tiempo para poder adaptarme un poco al lenguaje de programacion, viendo tutoriales y examinando como funcionan algunas plantillas, me pareció interesante esta actividad, dado que es un lenguaje el cual desconozco y planteo un reto el poder 
+trabajar con ello. Aun falta mucho por aprender y este pequeño avance, el cual hace uso de diversas librerias para algunos atributos. Con un poco mas tiempo para profundizar en este lenguaje se podria terminar el proyecto, el cual a futuro se plantea incluir el sistema de ventas y de inventario, asi el usuario lo tendra todo en uno, implementando un sistema de usuarios con permisos de administrador.
 
-Proyecto para generar dashboards para el usuario final, de manera que este pueda visualizar de manera mas didactica el reporte de ventas del negocio, se anexara el sistema de ventas eh inventario en un futuro, protegiendo los datos por medio de un sistemas de autenticacion, y registro de usuarios.
+Por el momento se presenta unos dashboards, con datos generados por codigo, la idea en general es vicular la BD ventas y poder usar esos datos para generar los dashboards.
 
  Requisitos:
  1. Node.js
